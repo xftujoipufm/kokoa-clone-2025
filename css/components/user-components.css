@@ -27,9 +27,15 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.user-component__avatar--xl{
-    width:80px;
-    height: 80px;
+.user-component__subtitle i {
+    margin-left: 5px;
+    font-size: 14px;
+    color: orangered;
+}
+
+.user-component__time{
+    margin-bottom: 5px;
+    display: block;
 }
 
 .user-component__avatar--sm{
