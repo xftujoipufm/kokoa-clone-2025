@@ -16,7 +16,7 @@
     z-index: 2;
 }
 
-##chat-screen .alt-header {
+#chat-screen .alt-header {
     top: 10px;
     z-index: 1;
 }
@@ -40,6 +40,11 @@
 .message-row{
     width: 100%;
     display: flex;
+    margin-bottom: 25px;
+}
+
+.message-row--own {
+    justify-content: flex-end;
 }
 
 .message-row img {
@@ -75,3 +80,15 @@
     opacity: 0.8;
     font-size: 14px;
     }
+
+    .message-row--own .message__bubble {
+        background-color: var(--yellow);
+        border-top-right-radius: 0px;
+        border-top-left-radius: 15px;
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
