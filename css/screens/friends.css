@@ -30,3 +30,26 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+@keyframes hidesplash-screen {
+    from {    
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen{
+    background-color: var(--yellow);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    animation: hidesplash-screen 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
